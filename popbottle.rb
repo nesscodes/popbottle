@@ -1,4 +1,4 @@
-require 'byebug'
+#require 'byebug'
 
 def recycler
 
@@ -9,13 +9,16 @@ def recycler
 
   redeemable_total_pops = pop_from_bottle + pop_from_cap
 
-  
+  bottle_remainder = bottle_number % 2
+  cap_remainder = bottle_number % 4
+
+
   
   puts "-----------------------"
   puts "you have purchased #{bottle_number} number of pops "
   puts " you can redeem #{redeemable_total_pops} pops with #{bottle_number}"
   puts "total number of pops obtained is #{redeemable_total_pops + bottle_number}"
-  puts "you have"
+  puts "you have remainder of #{bottle_remainder} bottles and #{cap_remainder} caps"
 
   puts "-----------------------"
 
@@ -23,7 +26,7 @@ def recycler
   end 
 
 
-recycler
+recycler  
 
 
 
